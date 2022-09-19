@@ -30,7 +30,7 @@ module.exports = {
                 rating INTEGER,
                 country_id INTEGER REFERENCES countries(country_id)
               );
-            
+           
             
 
             insert into countries (name)
@@ -229,6 +229,7 @@ module.exports = {
             ('Yemen'),
             ('Zambia'),
             ('Zimbabwe');
+            
         `).then(() => {
             console.log('DB seeded!')
             res.sendStatus(200)
